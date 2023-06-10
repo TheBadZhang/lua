@@ -1,0 +1,12 @@
+Human = () ->
+	class
+		name: "Unknow"
+		age: 17
+		sex: "women"
+		love: (someone) => print ("#{@name} love #{someone}")
+i   = formAHuman ("i")
+you = formAHuman ("you")
+me  = i
+
+i:love (you)      --> i love you
+you:love (me)     --> you love i
